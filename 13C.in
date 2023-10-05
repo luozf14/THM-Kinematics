@@ -1,0 +1,37 @@
+D1
+NAMELIST
+ &FRESCO hcm=0.05 rmatch=50. rintp=0.01 hnl=0.1
+     rnl=30. centre=-3.35
+     jtmin=0.0 jtmax=50. cutl=4.
+     absend=-0.1
+     thmin=0.00 thmax=180.00 thinc=1.00
+     iter=1 pralpha=F nnu=48 chans=1
+     smats=1  xstabl=1 waves=0 wdisk=2 iblock=2
+     elab=21.7 /
+ &PARTITION namep='13-C' massp=13.003355 zp=6.0 namet='12-C' masst=12.000 zt=6.0 qval=-4.94 pwf=T nex=1  /
+ &STATES jp=0.5 bandp=0 ep=0.0000 cpot=1 jt=0.0 bandt=1 et=0.0000 fexch=F  /
+ &PARTITION namet='1-n' masst=23.985 zt=12.0 namep='1-n' massp=1.008665 zp=0.0 qval=-16.531 pwf=T nex=1  /
+ &STATES jt=0.0 bandt=1 et=0 cpot=2 jp=.5 bandp=1 ep=0.0000 fexch=F  /
+ &partition /
+ &POT kp=1 type=0 ap=22.0 at=0.0 rc=1.3  /
+ &POT kp=1 type=1 p(1:6)=46.52   1.21   0.60  0.0   1.534   0.884 /
+ &POT kp=2 type=0 ap=26.0 at=0.0 rc=1.303  /
+ &POT kp=2 type=1 p1=93.293 p2=1.149 p3=0.756 p4=1.394 p5=1.339 p6=0.559 /
+ &POT kp=2 type=2 p4=10.687 p5=1.385 p6=0.715 /
+ &POT kp=2 type=4 p1=3.557 p2=0.972 p3=1.011 /
+ &POT kp=3 ap=22.0 at=0.0 rc=1.25  /
+ &POT kp=3 type=1 p1=79.5 p2=1.25 p3=0.8 p4=10.0 p5=1.25 p6=0.8  /
+ &POT kp=3 type=4 p1=6.0 p2=1.25 p3=0.8 /
+ &POT kp=10 ap=12.0 at=1.0 rc=1.21  /
+ &POT kp=10 type=1 p1=46.52 p2=1.2 p3=0.6 /
+ &POT kp=20 ap=2.0 at=0.0 rc=1.25  /
+ &POT kp=20 type=1 p1=85. p2=1.23 p3=0.6  /
+ &pot /
+ &OVERLAP kn1=11 ic1=1 ic2=2 in=1 nn=1 l=1 sn=0.5 j=0.5 kbpot=10 be=4.94 isc=1 ipc=3 nam=1 ampl=1.0  /
+ &OVERLAP kn1=22 ic1=2 ic2=1 in=2 nn=1 l=10 sn=0.0 j=0.0 kbpot=20 be=1.4743 isc=1 ipc=3 nam=1 ampl=1.0  /
+ &overlap /
+ &COUPLING icto=2 icfrom=1 kind=7 ip1=1 ip2=-1 ip3=3  /
+ &CFP in=1 ib=1 ia=1 kn=11 a=1.000 /
+ &CFP in=2 ib=1 ia=1 kn=22 a=1.000  /
+ &cfp /
+ &coupling /
