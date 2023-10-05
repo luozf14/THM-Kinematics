@@ -7,7 +7,7 @@ This repo provides three scripts to calculate the knematics for Trojan Horse Met
 
 ## How to use
 ### GetPsi_p.C
-This script converts the bound state wave function obtained from FRESCO from coordinate representation to momentum representation. It will generate ``Psi_p2.txt``.
+This script converts the bound state wave function obtained from FRESCO (``fort.58``) from coordinate representation to momentum representation. It will generate ``Psi_p2.txt``.
 
 ### GetAngCorrel.C
 This script reads the ``Psi_p2.txt``. It will draw the energy vs angle and angle vs angle figures. 
